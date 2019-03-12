@@ -13,7 +13,7 @@
  */
 
 
-//* Begin of tests
+/* Begin of tests
 const assert = require('assert')
 
 assert.fail('You must write your own tests')

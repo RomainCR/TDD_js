@@ -9,8 +9,14 @@
  */
 
 // Your code :
-
-//* Begin of tests
+    function multiply (x, y) {
+        let tot =  0
+        for (let i=0; i<x; i++) {
+            (x < 0 && y < 0) ? tot = tot - y : tot = tot + y 
+        }
+        return tot
+    }
+/* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

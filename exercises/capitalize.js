@@ -8,7 +8,7 @@
  */
 
 
-//* Begin of tests
+/* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof capitalize, "function")
