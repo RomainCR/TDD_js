@@ -7,7 +7,13 @@
  * Of course you may not use the method directly
  *
  */
-
+function repeat (x, y) {
+    let b = ''
+    for (let i=0; i < y; i++) {
+        b = b + x
+    }
+    return b
+ };
 //* Begin of tests
 const assert = require('assert')
 

@@ -5,8 +5,10 @@
  * and return an array of each words using space as a delimiter
  *
  */
-
-
+function words (x) {
+    
+    return x.split(" ")
+}
 //* Begin of tests
 const assert = require('assert')
 

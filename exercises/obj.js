@@ -8,6 +8,14 @@
  */
 
 // Your code :
+const primitives = {
+    str : "1337",
+    num : 42,
+    bool : false,
+    undef : undefined
+    };
+
+const obj = Object.create(primitives);
 
 //* Begin of tests
 const assert = require('assert')
