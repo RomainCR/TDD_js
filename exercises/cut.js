@@ -10,6 +10,17 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
+function cutFirst (word){
+    return word.slice(2);
+}
+
+function cutLast (word){
+    return word.substring(word.length-2);
+}
+
+function cutFirstLast (word){
+    return word.slice(2,word.length-2);
+}
 
 
 /* Begin of tests

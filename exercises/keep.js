@@ -12,6 +12,18 @@
  *
  */
 
+function keepFirst (word){
+    return word.slice(2);
+}
+
+function keepLast (word){
+    return word.substring(word.length-2);
+}
+
+function keepFirstLast (word){
+    return word.slice(2,word.length-2);
+}
+
 
 /* Begin of tests
 const assert = require('assert')
