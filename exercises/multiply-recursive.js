@@ -11,7 +11,7 @@
 
 // Your code :
 
-/* Begin of tests
+//* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

@@ -9,14 +9,24 @@
  */
 
 // Your code :
-    function multiply (x, y) {
-        let tot =  0
-        for (let i=0; i<x; i++) {
-            (x < 0 && y < 0) ? tot = tot - y : tot = tot + y 
+function multiply(x, y) {
+    let tot = 0
+    if (x < 0) {
+        x = -x
+        y = -y
+        for (let i = 0; i < x; i++) {
+            tot = tot + y
         }
-        return tot
     }
-/* Begin of tests
+
+    else {
+        for (let i = 0; i < x; i++) {
+            tot = tot + y
+        }
+    }
+    return tot
+}        
+//* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')
@@ -32,3 +42,16 @@ assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
 // End of tests */
+
+
+/*(x < 0 && y < 0) ? (x = -x && y = -y) : (x=x && y=y)
+ function multiply (x, y) {
+        let tot =  0
+        if(x<0 && y<0) {
+            return (x=-x && y=-y)
+        }
+        for (let i=0; i<x; i++) {
+            tot = tot + y 
+        }
+        return tot
+    }*/
